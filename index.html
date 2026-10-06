@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#100b1b" />
+    <meta name="description" content="Portfolio of Atharva Sawant, Full Stack Developer." />
+    <title>Atharva Sawant — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="Atharva Sawant, home">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>ATHARVA SAWANT<span class="brand-period">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="header-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> PERSONAL PORTFOLIO <span class="eyebrow-year">/ <span data-year></span></span></p>
+            <h1 id="hero-title">Hi, I’m<br /><span class="hero-name">Atharva Sawant<span class="gradient-dot">.</span></span></h1>
+            <p class="hero-role">Full Stack Developer</p>
+            <p class="hero-description">I build useful web experiences and explore how data and machine learning can solve practical problems.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+              <a class="button button-quiet" href="https://github.com/emtharva1047" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-note"><span class="note-line"></span><span>FULL STACK DEVELOPMENT · DATA &amp; MACHINE LEARNING</span></div>
+          </div>
+
+          <div class="hero-visual" aria-label="Profile details preview">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit-core"><span>✳</span></div>
+            <div class="code-window">
+              <div class="window-bar">
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span class="window-file">profile.ts</span>
+                <span class="window-status"><i></i> ready to build</span>
+              </div>
+              <div class="code-content" aria-label="Profile details">
+                <p><span class="code-purple">const</span> <span class="code-cyan">atharva</span> = {</p>
+                <p class="code-indent"><span class="code-muted">name:</span> <span class="code-green">'Atharva Sawant'</span>,</p>
+                <p class="code-indent"><span class="code-muted">focus:</span> <span class="code-green">'full stack + applied ML'</span>,</p>
+                <p class="code-indent"><span class="code-muted">building:</span> <span class="code-green">'data-driven projects'</span>,</p>
+                <p class="code-indent"><span class="code-muted">tools:</span> [<span class="code-yellow">'Python'</span>, <span class="code-yellow">'Streamlit'</span>],</p>
+                <p>};</p>
+              </div>
+              <div class="code-footer"><span>PROFILE.TS</span><span><i></i> ready to build</span></div>
+            </div>
+            <div class="floating-tag tag-top"><span>✦</span> MAKE IT MATTER</div>
+            <div class="floating-tag tag-bottom"><span class="tag-pulse"></span> CREATIVE MODE: ON</div>
+            <span class="visual-index">01 <span>—</span> INTRO</span>
+          </div>
+          <a class="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><i aria-hidden="true">↓</i></a>
+        </section>
+
+        <section class="about section-wrap section-space" id="about" aria-labelledby="about-title">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="section-number">01</span> / ABOUT</p>
+            <h2 id="about-title">A little about <span class="text-gradient">me.</span></h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-main">
+              <p class="about-lead">I’m Atharva, a full stack developer interested in building useful products and data-informed tools.</p>
+              <p class="body-copy">My recent projects explore forecasting, customer churn, recommendations, and review sentiment. I enjoy taking an idea from data preparation through a working application.</p>
+              <a class="text-link" href="#work">Explore selected projects <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="about-aside">
+              <div class="aside-label"><span class="aside-icon">✳</span> CURRENT FOCUS</div>
+              <p>Building practical applications and strengthening my machine-learning and analytics work.</p>
+              <div class="aside-divider"></div>
+              <div class="aside-label"><span class="aside-icon">⌖</span> INTERESTS</div>
+              <p>Full stack development, applied machine learning, and thoughtful data products.</p>
+              <span class="aside-decoration" aria-hidden="true">✳</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="work section-wrap section-space" id="work" aria-labelledby="work-title">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow"><span class="section-number">02</span> / SELECTED WORK</p>
+              <h2 id="work-title">Things I’ve <span class="text-gradient">made.</span></h2>
+            </div>
+            <p class="section-aside-copy">Four recent projects<br />in data and machine learning.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-art art-violet">
+                <span class="project-count">PROJECT / 01</span>
+                <div class="art-orbit"></div><div class="art-shape art-shape-one"></div><div class="art-shape art-shape-two"></div>
+                <span class="art-caption">DEMAND FORECASTING</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row"><div><p class="project-kind">TIME SERIES · FORECASTING</p><h3>Time Series Forecasting</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <p class="project-description">Forecasts Walmart weekly sales with statistical and machine-learning models. Project materials report 1.31% MAPE on a 12-week company-wide holdout.</p>
+                <div class="project-bottom"><div class="tag-list"><span>SARIMA</span><span>Python</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/time-series-forecasting" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art art-blue">
+                <span class="project-count">PROJECT / 02</span>
+                <div class="art-sun"></div><div class="art-ring"></div><div class="art-spark">✳</div>
+                <span class="art-caption">PREDICTIVE ANALYTICS</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row"><div><p class="project-kind">PREDICTIVE ANALYTICS</p><h3>Customer Churn Prediction</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <p class="project-description">An end-to-end telecom churn workflow with feature selection, model comparison, and a Streamlit dashboard. Tuned Gradient Boosting reports a 0.847 test ROC-AUC.</p>
+                <div class="project-bottom"><div class="tag-list"><span>scikit-learn</span><span>Classification</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/customer-churn-prediction" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art art-orange">
+                <span class="project-count">PROJECT / 03</span>
+                <div class="art-sun"></div><div class="art-ring"></div><div class="art-spark">✳</div>
+                <span class="art-caption">NATURAL LANGUAGE PROCESSING</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row"><div><p class="project-kind">NLP · SENTIMENT</p><h3>Sentiment Analysis</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <p class="project-description">Classifies e-commerce review sentiment with TF-IDF and classical machine-learning models, with a Streamlit demo. The included data workflow uses a synthetic stand-in.</p>
+                <div class="project-bottom"><div class="tag-list"><span>TF-IDF</span><span>NLP</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/sentiment-analysis" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art art-blue">
+                <span class="project-count">PROJECT / 04</span>
+                <div class="art-grid"></div><div class="art-window"><span></span><span></span><span></span><i></i></div>
+                <span class="art-caption">PERSONALIZED DISCOVERY</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row"><div><p class="project-kind">RECOMMENDATION SYSTEM</p><h3>Recommendation System</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <p class="project-description">Compares popularity, content-based, collaborative-filtering, and matrix-factorization approaches. The project report records offline Precision@10 of 0.099 versus a 0.0395 popularity baseline.</p>
+                <div class="project-bottom"><div class="tag-list"><span>Recommenders</span><span>Collaborative Filtering</span><span>Python</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/movie-recommendation-system" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="stack section-wrap section-space" id="stack" aria-labelledby="stack-title">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow"><span class="section-number">03</span> / MY TOOLKIT</p>
+              <h2 id="stack-title">The things I <span class="text-gradient">use.</span></h2>
+            </div>
+            <p class="section-aside-copy">A living toolkit, shaped by<br />the work I want to do.</p>
+          </div>
+          <div class="stack-panel">
+            <div class="stack-intro"><span class="stack-symbol">{ }</span><div><p class="project-kind">STACK.CONFIG</p><p>Tools and methods used across my recent projects.</p></div></div>
+            <div class="stack-groups">
+              <div class="stack-group"><span class="stack-group-index">01</span><div><h3>Languages &amp; data</h3><div class="tag-list"><span>Python</span><span>pandas</span><span>NumPy</span></div></div></div>
+              <div class="stack-group"><span class="stack-group-index">02</span><div><h3>Libraries &amp; apps</h3><div class="tag-list"><span>scikit-learn</span><span>Streamlit</span><span>Matplotlib</span></div></div></div>
+              <div class="stack-group"><span class="stack-group-index">03</span><div><h3>Methods</h3><div class="tag-list"><span>Forecasting</span><span>NLP</span><span>Recommendation Systems</span></div></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section-wrap section-space" id="contact" aria-labelledby="contact-title">
+          <div class="contact-panel">
+            <p class="eyebrow"><span class="section-number">04</span> / GET IN TOUCH</p>
+            <h2 id="contact-title">Have a good one<br />in <span class="text-gradient">mind?</span></h2>
+            <p class="contact-copy">Interested in full stack development, applied data projects, or collaborating on an idea? Let’s connect.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:sawantatharva555@gmail.com" aria-label="Email Atharva Sawant">sawantatharva555@gmail.com <span aria-hidden="true">↗</span></a>
+              <div class="contact-socials" aria-label="Social profiles">
+                <a class="contact-social" href="https://www.linkedin.com/in/atharva-sawant-72aa28392/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                <a class="contact-social" href="https://github.com/emtharva1047" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="contact-decoration" aria-hidden="true">✳</div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span><span>ATHARVA SAWANT<span class="brand-period">.</span></span></a>
+        <p>Made with care <span class="footer-heart">♥</span> · <span data-year></span></p>
+        <a class="back-top" href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
