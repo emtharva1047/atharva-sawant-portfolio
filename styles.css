@@ -175,6 +175,9 @@ h2 { margin: 0; font-size: clamp(36px, 4.5vw, 58px); line-height: 1.08; letter-s
 .stack-group:nth-child(odd) { border-right: 1px solid var(--line); }.stack-group:last-child { border-bottom: 0; }
 .stack-group-index { padding-top: 2px; color: #9d7bce; font: 10px var(--mono); }
 .stack-group h3 { margin: 0 0 13px; font-size: 12px; }
+  .experience-role { margin: 0 0 6px; color: #c3b9d0; font-size: 12px; }
+  .experience-company { color: #b99ae8; font: 9px var(--mono); transition: color .2s ease; }
+  .experience-company:hover { color: #d7c1ff; }
 .contact { padding-top: 80px; padding-bottom: 70px; }
 .contact-panel { position: relative; overflow: hidden; padding: clamp(38px, 7vw, 78px); border: 1px solid rgba(222, 204, 255, .15); border-radius: 18px; background: radial-gradient(ellipse at 88% 20%, rgba(120, 69, 199, .27), transparent 35rem), linear-gradient(135deg, rgba(38, 28, 58, .91), rgba(20, 16, 31, .96)); }
 .contact-panel .eyebrow, .contact-panel h2, .contact-copy, .contact-actions { position: relative; z-index: 1; }
