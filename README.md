@@ -1,6 +1,6 @@
 # Atharva Sawant — Portfolio
 
-A responsive personal portfolio for Atharva Sawant, Full Stack Developer. The site introduces my background, highlights selected data and machine learning projects, and links to my GitHub, LinkedIn, and email.
+A responsive personal portfolio for Atharva Sawant, Full Stack Developer. The site introduces my background, highlights selected data and machine learning projects, and links to my GitHub, LinkedIn, and email. It includes a dark/light theme toggle that remembers your choice.
 
 ## Run locally
 
