@@ -105,8 +105,16 @@
             </div>
             <p class="section-aside-copy">Four recent projects<br />in data and machine learning.</p>
           </div>
+          <div class="project-filters" role="group" aria-label="Filter projects by category">
+            <button class="project-filter" type="button" data-project-filter="all" aria-pressed="true">All projects</button>
+            <button class="project-filter" type="button" data-project-filter="forecasting" aria-pressed="false">Forecasting</button>
+            <button class="project-filter" type="button" data-project-filter="predictive" aria-pressed="false">Predictive analytics</button>
+            <button class="project-filter" type="button" data-project-filter="nlp" aria-pressed="false">NLP</button>
+            <button class="project-filter" type="button" data-project-filter="recommendation" aria-pressed="false">Recommendations</button>
+          </div>
+          <p class="visually-hidden" data-project-status aria-live="polite">Showing all 4 projects.</p>
           <div class="project-grid">
-            <article class="project-card">
+            <article class="project-card" data-project-category="forecasting">
               <div class="project-art">
                 <span class="project-count">PROJECT / 01</span>
                 <img class="project-image" src="assets/time-series-forecasting.webp" alt="Time series forecasting illustration with historical values and a projected future trend." width="1600" height="893" loading="lazy" decoding="async" />
@@ -117,7 +125,7 @@
                 <div class="project-bottom"><div class="tag-list"><span>SARIMA</span><span>Python</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/time-series-forecasting" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
               </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-project-category="predictive">
               <div class="project-art">
                 <span class="project-count">PROJECT / 02</span>
                 <img class="project-image" src="assets/customer-churn-prediction.webp" alt="Customer churn prediction illustration showing customers staying active or leaving." width="1600" height="893" loading="lazy" decoding="async" />
@@ -128,7 +136,7 @@
                 <div class="project-bottom"><div class="tag-list"><span>scikit-learn</span><span>Classification</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/customer-churn-prediction" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
               </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-project-category="nlp">
               <div class="project-art">
                 <span class="project-count">PROJECT / 03</span>
                 <img class="project-image" src="assets/sentiment-analysis.webp" alt="Sentiment analysis graphic classifying feedback as positive, neutral, or negative." width="1600" height="893" loading="lazy" decoding="async" />
@@ -139,7 +147,7 @@
                 <div class="project-bottom"><div class="tag-list"><span>TF-IDF</span><span>NLP</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/sentiment-analysis" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
               </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-project-category="recommendation">
               <div class="project-art">
                 <span class="project-count">PROJECT / 04</span>
                 <img class="project-image" src="assets/recommendation-system.webp" alt="Recommendation system illustration matching a user with personalized content." width="1600" height="893" loading="lazy" decoding="async" />

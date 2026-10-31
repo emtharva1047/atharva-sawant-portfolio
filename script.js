@@ -79,3 +79,25 @@ const observer = new IntersectionObserver((entries) => {
 }, { rootMargin: "-35% 0px -55% 0px" });
 
 sections.forEach((section) => observer.observe(section));
+
+const projectFilters = [...document.querySelectorAll("[data-project-filter]")];
+const projectCards = [...document.querySelectorAll("[data-project-category]")];
+const projectStatus = document.querySelector("[data-project-status]");
+
+projectFilters.forEach((filter) => {
+  filter.addEventListener("click", () => {
+    const category = filter.dataset.projectFilter;
+    let visibleCount = 0;
+
+    projectCards.forEach((card) => {
+      const isVisible = category === "all" || card.dataset.projectCategory === category;
+      card.hidden = !isVisible;
+      if (isVisible) visibleCount += 1;
+    });
+
+    projectFilters.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button === filter));
+    });
+    projectStatus.textContent = `Showing ${visibleCount} project${visibleCount === 1 ? "" : "s"}.`;
+  });
+});

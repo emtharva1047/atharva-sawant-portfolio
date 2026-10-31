@@ -137,6 +137,11 @@ h2 { margin: 0; font-size: clamp(36px, 4.5vw, 58px); line-height: 1.08; letter-s
 .aside-decoration { position: absolute; right: -9px; bottom: -45px; color: rgba(151, 112, 213, .07); font-size: 155px; }
 .section-heading-row { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
 .section-aside-copy { margin: 0 0 4px; color: var(--dim); font: 11px/1.8 var(--mono); text-align: right; }
+.project-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 25px 0 18px; }
+.project-filter { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: rgba(25, 19, 39, .72); font: 10px var(--mono); cursor: pointer; transition: color .2s ease, border-color .2s ease, background .2s ease; }
+.project-filter:hover, .project-filter[aria-pressed="true"] { border-color: rgba(185, 147, 255, .4); color: var(--text); background: rgba(157, 111, 238, .12); }
+.project-card[hidden] { display: none !important; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .project-card { overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: rgba(21, 17, 33, .78); transition: transform .25s ease, border-color .25s ease; }
 .project-card:hover { transform: translateY(-4px); border-color: rgba(185, 147, 255, .35); }
@@ -305,6 +310,9 @@ h2 { margin: 0; font-size: clamp(36px, 4.5vw, 58px); line-height: 1.08; letter-s
 :root[data-theme="light"] .aside-icon { color: #6942a8; }
 :root[data-theme="light"] .about-aside p { color: #51465f; }
 :root[data-theme="light"] .project-card { background: rgba(255, 255, 255, .86); }
+:root[data-theme="light"] .project-filter { color: var(--muted); background: rgba(255, 255, 255, .65); }
+:root[data-theme="light"] .project-filter:hover,
+:root[data-theme="light"] .project-filter[aria-pressed="true"] { border-color: rgba(116, 68, 199, .34); color: #433451; background: rgba(116, 68, 199, .09); }
 :root[data-theme="light"] .project-kind { color: #705b8b; }
 :root[data-theme="light"] .project-arrow { color: #6949a0; }
 :root[data-theme="light"] .project-bottom { border-top-color: rgba(62, 45, 83, .12); }
