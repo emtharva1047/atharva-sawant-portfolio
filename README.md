@@ -1,6 +1,14 @@
 # Atharva Sawant — Portfolio
 
-A responsive personal portfolio for Atharva Sawant, Full Stack Developer. The site introduces my background, highlights selected data and machine learning projects with custom project artwork, and links to my GitHub, LinkedIn, and email. It includes a dark/light theme toggle that remembers your choice.
+A responsive portfolio for Atharva Sawant, Full Stack Developer and Data Science Intern. It presents selected web and machine-learning projects, experience, and contact links.
+
+## Features
+
+- Dark and light themes with the selected preference saved in the browser.
+- Project category filters with accessible selection and result announcements.
+- Keyboard-friendly navigation, reduced-motion support, and responsive layouts.
+- One-click email copying with an accessible status message.
+- Search and social-sharing metadata, plus a custom SVG favicon.
 
 ## Run locally
 
@@ -22,3 +30,10 @@ Then visit <http://localhost:8000>.
 ## Built with
 
 HTML, CSS, and vanilla JavaScript.
+
+## Project structure
+
+- `index.html` — page content and metadata.
+- `styles.css` — responsive layout and theme styles.
+- `script.js` — theme, navigation, project filtering, and contact interactions.
+- `assets/` — project artwork and the site favicon.
