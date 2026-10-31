@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=portfolio-artwork-v2" />
+    <link rel="stylesheet" href="styles.css?v=portfolio-artwork-v3" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -111,7 +111,7 @@
               <p class="eyebrow"><span class="section-number">02</span> / SELECTED WORK</p>
               <h2 id="work-title">Things I’ve <span class="text-gradient">made.</span></h2>
             </div>
-            <p class="section-aside-copy">Four recent projects<br />in data and machine learning.</p>
+            <p class="section-aside-copy">Applied machine learning<br />and data products.</p>
           </div>
           <div class="project-filters" role="group" aria-label="Filter projects by category">
             <button class="project-filter" type="button" data-project-filter="all" aria-pressed="true">All projects</button>
@@ -122,48 +122,51 @@
           </div>
           <p class="visually-hidden" data-project-status aria-live="polite">Showing all 4 projects.</p>
           <div class="project-grid">
-            <article class="project-card" data-project-category="forecasting">
+            <article class="project-card project-featured" data-project-category="forecasting">
               <div class="project-art">
-                <span class="project-count">PROJECT / 01</span>
+                <span class="project-count">FEATURED PROJECT <span>01 / 04</span></span>
                 <img class="project-image" src="assets/time-series-forecasting.jpg" alt="A historical time-series curve transitioning into an amber forecast range on a dark analytics grid." width="1672" height="941" loading="lazy" decoding="async" />
+                <span class="project-art-caption"><i></i> FORECAST HORIZON · 12 WEEKS</span>
               </div>
               <div class="project-info">
-                <div class="project-title-row"><div><p class="project-kind">TIME SERIES · FORECASTING</p><h3>Time Series Forecasting</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
-                <p class="project-description">Forecasts Walmart weekly sales with statistical and machine-learning models. Project materials report 1.31% MAPE on a 12-week company-wide holdout.</p>
-                <div class="project-bottom"><div class="tag-list"><span>SARIMA</span><span>Python</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/time-series-forecasting" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+                <p class="project-kind">TIME SERIES · FORECASTING</p>
+                <div class="project-title-row"><h3>Time Series Forecasting</h3><span class="project-arrow" aria-hidden="true">↗</span></div>
+                <p class="project-description">A weekly sales forecasting workflow for Walmart data, comparing statistical and machine-learning approaches across a company-wide holdout.</p>
+                <div class="project-proof"><span class="project-proof-label">REPORTED HOLDOUT MAPE</span><strong>1.31<span>%</span></strong><span class="project-proof-note">12-week evaluation</span></div>
+                <div class="project-bottom"><div class="tag-list"><span>SARIMA</span><span>Python</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/time-series-forecasting" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></div>
               </div>
             </article>
             <article class="project-card" data-project-category="predictive">
               <div class="project-art">
-                <span class="project-count">PROJECT / 02</span>
+                <span class="project-count">PROJECT <span>02 / 04</span></span>
                 <img class="project-image" src="assets/customer-churn-prediction.jpg" alt="Customer retention cohorts shown as descending teal, violet, and coral curves on a dark analytics grid." width="1672" height="941" loading="lazy" decoding="async" />
               </div>
               <div class="project-info">
                 <div class="project-title-row"><div><p class="project-kind">PREDICTIVE ANALYTICS</p><h3>Customer Churn Prediction</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
                 <p class="project-description">An end-to-end telecom churn workflow with feature selection, model comparison, and a Streamlit dashboard. Tuned Gradient Boosting reports a 0.847 test ROC-AUC.</p>
-                <div class="project-bottom"><div class="tag-list"><span>scikit-learn</span><span>Classification</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/customer-churn-prediction" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+                <div class="project-bottom"><div class="tag-list"><span>scikit-learn</span><span>Classification</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/customer-churn-prediction" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></div>
               </div>
             </article>
             <article class="project-card" data-project-category="nlp">
               <div class="project-art">
-                <span class="project-count">PROJECT / 03</span>
+                <span class="project-count">PROJECT <span>03 / 04</span></span>
                 <img class="project-image" src="assets/sentiment-analysis.jpg" alt="Three point clusters representing sentiment groups in a dark embedding visualization." width="1672" height="941" loading="lazy" decoding="async" />
               </div>
               <div class="project-info">
                 <div class="project-title-row"><div><p class="project-kind">NLP · SENTIMENT</p><h3>Sentiment Analysis</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
                 <p class="project-description">Classifies e-commerce review sentiment with TF-IDF and classical machine-learning models, with a Streamlit demo. The included data workflow uses a synthetic stand-in.</p>
-                <div class="project-bottom"><div class="tag-list"><span>TF-IDF</span><span>NLP</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/sentiment-analysis" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+                <div class="project-bottom"><div class="tag-list"><span>TF-IDF</span><span>NLP</span><span>Streamlit</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/sentiment-analysis" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></div>
               </div>
             </article>
             <article class="project-card" data-project-category="recommendation">
               <div class="project-art">
-                <span class="project-count">PROJECT / 04</span>
+                <span class="project-count">PROJECT <span>04 / 04</span></span>
                 <img class="project-image" src="assets/recommendation-system.jpg" alt="A user preference vector connecting through a recommendation graph to selected matches." width="1672" height="941" loading="lazy" decoding="async" />
               </div>
               <div class="project-info">
                 <div class="project-title-row"><div><p class="project-kind">RECOMMENDATION SYSTEM</p><h3>Recommendation System</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
                 <p class="project-description">Compares popularity, content-based, collaborative-filtering, and matrix-factorization approaches. The project report records offline Precision@10 of 0.099 versus a 0.0395 popularity baseline.</p>
-                <div class="project-bottom"><div class="tag-list"><span>Recommenders</span><span>Collaborative Filtering</span><span>Python</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/movie-recommendation-system" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+                <div class="project-bottom"><div class="tag-list"><span>Recommenders</span><span>Collaborative Filtering</span><span>Python</span></div><a class="project-link-placeholder" href="https://github.com/emtharva1047/movie-recommendation-system" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></div>
               </div>
             </article>
           </div>
@@ -216,3 +219,4 @@
     <script src="script.js?v=theme-toggle"></script>
   </body>
 </html>
+
