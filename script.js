@@ -101,3 +101,19 @@ projectFilters.forEach((filter) => {
     projectStatus.textContent = `Showing ${visibleCount} project${visibleCount === 1 ? "" : "s"}.`;
   });
 });
+
+const copyEmailButton = document.querySelector("[data-copy-email]");
+const copyEmailStatus = document.querySelector("[data-copy-email-status]");
+
+copyEmailButton.addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(copyEmailButton.dataset.copyEmail);
+    copyEmailButton.textContent = "Copied!";
+    copyEmailStatus.textContent = "Email address copied to clipboard.";
+    window.setTimeout(() => {
+      copyEmailButton.textContent = "Copy email";
+    }, 2000);
+  } catch {
+    copyEmailStatus.textContent = "Could not copy the email address. You can copy it from the email link.";
+  }
+});
