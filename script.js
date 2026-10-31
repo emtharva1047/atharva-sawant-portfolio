@@ -56,6 +56,14 @@ navigationLinks.forEach((link) => {
   });
 });
 
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape" || menuButton.getAttribute("aria-expanded") !== "true") return;
+  navigation.classList.remove("is-open");
+  menuButton.setAttribute("aria-expanded", "false");
+  menuButton.setAttribute("aria-label", "Open navigation");
+  menuButton.focus();
+});
+
 const sections = [...document.querySelectorAll("main section[id]")];
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
